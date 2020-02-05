@@ -9,18 +9,23 @@
   </head>
   <body>
     <main>
-      <h1 class="search__header">What do you want?</h1>
-      <form class="search__form">
-        <label class="search__box">
-          <input
-            class="search__value"
-            type="text"
-            name="search"
-            placeholder="Search a type of Alcohol"
-          />
-        </label>
-        <button>Search Cocktails</button>
-      </form>
+      <div class="search__background-image">
+        <h1 class="search__header">What do you want?</h1>
+        <form class="search__form">
+          <label class="search__box">
+            <input
+              class="search__value"
+              type="text"
+              name="search"
+              placeholder="Name an ingredient"
+            />
+          </label>
+          <button class="search__button">
+            Search
+          </button>
+        </form>
+      </div>
+      <section class="list"></section>
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./scripts/script.js"></script>

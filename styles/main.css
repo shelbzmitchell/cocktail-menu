@@ -1,1 +1,108 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: montserrat;
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "montserrat", arial, sans-serif;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  overflow-x: hidden;
+  /*to avoid horizontal scroll */
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.search__background-image {
+  background-image: url(../../assets/main-bg-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search__header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.search__value {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.search__value:focus {
+  border: 2px solid black;
+}
+
+.search__button {
+  height: 2rem;
+  width: 4rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .search__header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .search__value {
+    height: 60px;
+    width: 200px;
+  }
+  .search__button {
+    height: 60px;
+    width: 100px;
+  }
+}
+
+.list {
+  background-color: black;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list__item {
+  color: white;
+  padding: 0.25rem;
+}
+/*# sourceMappingURL=main.css.map */

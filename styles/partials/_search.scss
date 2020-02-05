@@ -1,0 +1,57 @@
+.search {
+  &__background-image {
+    background-image: url(../../assets/main-bg-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  &__value {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    &:focus {
+      border: 2px solid black;
+    }
+  }
+  &__button {
+    height: 2rem;
+    width: 4rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+  }
+}
+
+@include huge {
+  .search {
+    &__header {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &__value {
+      height: 60px;
+      width: 200px;
+    }
+
+    &__button {
+      height: 60px;
+      width: 100px;
+    }
+  }
+}
